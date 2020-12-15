@@ -1,0 +1,41 @@
+/* background-color: #183153; NAVY */
+
+/*.seat:before {
+    content: url(./armchair.svg);
+    transform: rotate(90deg);
+}
+*/
+
+.class{
+    background-color:  yellow;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    height: 80px;
+    width: 50px;
+}
+
+.seat:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.session-select{
+    display: block;
+    border: grey 1px solid;
+}
+
+
+.sessions {
+    display: inline-flex;
+}
+
+.session-select:hover {
+    cursor: pointer;
+}
+
+.selected{
+    background-color: yellow;
+}
+.selected:hover{
+    cursor: none;
+}
