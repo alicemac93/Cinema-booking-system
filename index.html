@@ -2,92 +2,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cinema booking system</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-<!--https://www.odeon.co.uk/films/wonder-woman-1984/HO00001259/
-ul: li for each day and list (list in grid style)-->
+<div class="container-wrapper">
     <form action="" method="GET">
-        <p class="dates"> 
-            <select id="dates" required>
-            <option id="today">14.12.2020</option>
-            <option value="15">15.12.2020</option>
-            <option value="16">16.12.2020</option>
-            <option value="17">Germany</option>
-            <option value="Netherlands">Netherlands</option>
-            <option value="Denmark">Denmark</option>
-            </select>
-        </p>
-        <p class="sessions"> 
-            <select id="sessions" required>
-            <option value="">Select</option>
-            <option value="10">10:00</option>
-            <option value="11">11:00</option>
-            <option value="12">12:00</option>
-            <option value="13">13:00</option>
-            <option value="14">14:00</option>
-            </select>
-        </p>
-        <input type="submit" id="next" value="Show available dates">
-    </form>
-        <div class="sessions"> 
-            <div class="session-select">
-                <b>10:00 - 11:00</b>
-            </div>
-            <div class="session-select">
-                <b>11:00 - 12:00</b>
-            </div>
-            <div class="session-select">
-                <b>12:00 - 13:00</b>
-            </div>
-            <div class="session-select">
-                <b>13:00 - 14:00</b>
-            </div>
+        <div class="calendar">
         </div>
-
-        <div class="select-seats-container">
-            <div class="legend">
+        <p class="sessions">
+            <select id="sessions" class="sessions-input"required>
+            <option value="">Select session time</option>
+            <option value="10">10:00 - 12:00</option>
+            <option value="12">12:00 - 14:00</option>
+            <option value="14">14:00 - 16:00</option>
+            <option value="16">16:00 - 18:00</option>
+            <option value="18">18:00 - 20:00</option>
+            <option value="20">20:00 - 22:00</option>
+            </select>
+        </p>
+        <input class="button" type="submit" id="next" value="Show available seats">
+        <div class="select-seats-container cinemaview">
+            <div class="legends">
                 <span class="legend-container">
-                    <img src="" alt="">
+                    <div class="seat-leg selection"></div>
                     <span class="legend">Selected</span>
                 </span>
                 <span class="legend-container">
-                    <img src="" alt="">
+                    <div class="seat-leg"></div>
                     <span class="legend">Available</span>
                 </span>
                 <span class="legend-container">
-                    <img src="" alt="">
+                    <div class="seat-leg selected"></div>
                     <span class="legend">Occupied</span>
                 </span>
             </div>
-
-
-        </div>
-         <div class="seat-Selection">
+         <div class="seat-Selection ">
              <table class="seats" id="seats">
                 <tr>
-                        <td id="A1" class="seat">seat</td>
-                        <td value="A2" id="A2" class="seat">seat</td>
-                        <td value="A3" id="A3" class="seat">seat</td>
-                        <td value="A4" id="A4" class="seat">seat</td>
-                        <td value="A5" id="A5" class="seat">seat</td>
-                        <td value="A6" id="A6" class="seat">seat</td>  
+                        <td value="A1" id="A1" class="seat"></td>
+                        <td value="A2" id="A2" class="seat"></td>
+                        <td value="A3" id="A3" class="seat"></td>
+                        <td value="A4" id="A4" class="seat"></td>
+                        <td value="A5" id="A5" class="seat"></td>
+                        <td value="A6" id="A6" class="seat"></td>  
                 </tr>
                 <tr>
-                    <td id="A7" class="seat">seat</td>
-                    <td value="A2" id="A8" class="seat">seat</td>
-                    <td value="A3" id="A9" class="seat">seat</td>
-                    <td value="A4" id="A10" class="seat">seat</td>
-                    <td value="A5" id="A11" class="seat">seat</td>
-                    <td value="A6" id="A12" class="seat">seat</td>  
+                    <td value="B1" id="B1" class="seat"></td>
+                    <td value="B2" id="B2" class="seat"></td>
+                    <td value="B3" id="B3" class="seat"></td>
+                    <td value="B4" id="B4" class="seat"></td>
+                    <td value="B5" id="B5" class="seat"></td>
+                    <td value="B6" id="B6" class="seat"></td>  
+                </tr>
+                <tr>
+                    <td value="C1" id="C1" class="seat"></td>
+                    <td value="C2" id="C2" class="seat"></td>
+                    <td value="C3" id="C3" class="seat"></td>
+                    <td value="C4" id="C4" class="seat"></td>
+                    <td value="C5" id="C5" class="seat"></td>
+                    <td value="C6" id="C6" class="seat"></td>  
                 </tr>
              </table>
-             <button id="submit" >Submit</button>
-
+             <input class="button" type="submit" id="submit" value="Confirm seat selection">
             </div>
          </div>
-
+        </form>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
