@@ -88,7 +88,6 @@ const getAvailableSeats = (event) => {
     }
 }};
 
-session.addEventListener("change", getAvailableSeats);
 next.addEventListener("click", getAvailableSeats);
 
 // SELECT SEATS
@@ -127,11 +126,6 @@ const getSeats = () => {
 }  
 }
 
-/*
-submitSelection.insertAdjacentHTML("beforebegin", 
-    `<h3>You have selected seats ${selectedSeats[0]}</h3>`)
-
-*/
 
 // UPDATE LOCAL STORAGE WITH NEW SELECTION 
 
